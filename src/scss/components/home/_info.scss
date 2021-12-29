@@ -1,0 +1,47 @@
+.info {
+  margin-bottom: 50px;
+  padding: 50px 0;
+
+  &__title {
+    margin: 0 auto 36px;
+    width: 100%;
+    max-width: 650px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  button {
+    display: flex;
+    margin: 0 auto 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    margin: 0 15px;
+    border-right: 2px solid var(--color-white);
+    border-left: 2px solid var(--color-white);
+    padding: 0 15px;
+    width: 100%;
+    max-width: 240px;
+  }
+
+  &__num {
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  &__descr {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+  }
+}

@@ -1,0 +1,51 @@
+.project {
+  margin-bottom: 50px;
+  padding: 50px 0;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 430px;
+  }
+
+  &__link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 40px;
+    font-weight: 400;
+    color: #a1c5e9;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      background-image: url('../img/arrow.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 540px;
+  }
+
+  &__img {
+    border-radius: 10px;
+  }
+}

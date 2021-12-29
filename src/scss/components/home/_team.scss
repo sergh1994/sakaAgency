@@ -1,0 +1,96 @@
+.team {
+  margin-bottom: 50px;
+  padding: 50px 0;
+
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__box-right {
+    margin-top: 50px;
+  }
+
+  &__item {
+    display: flex;
+    width: 100%;
+    max-width: 540px;
+  }
+
+  &__item--first {
+    margin-right: 25px;
+    margin-bottom: 25px;
+  }
+
+  &__item--third {
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+  }
+
+  &__item--fourth {
+    flex-direction: row-reverse;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-right: 10px;
+    text-align: right;
+  }
+
+  &__content--first {
+    padding-bottom: 20px;
+  }
+
+  &__content--second {
+    padding-bottom: 80px;
+  }
+
+  &__content--third {
+    padding-bottom: 20px;
+    padding-left: 15px;
+    text-align: left;
+  }
+
+  &__content--fourth {
+    padding-bottom: 70px;
+    padding-left: 15px;
+    text-align: left;
+  }
+
+  &__caption {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  &__descr {
+    width: 100%;
+    max-width: 247px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  &__pic--first {
+    border-radius: 100px 0 0;
+  }
+
+  &__pic--second {
+    border-radius: 0 0 0 100px;
+  }
+
+  &__pic--third {
+    border-radius: 0px 100px 0px 0px;
+  }
+
+  &__pic--fourth {
+    border-radius: 0px 0px 100px 0px;
+  }
+}

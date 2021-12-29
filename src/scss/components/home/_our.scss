@@ -1,0 +1,103 @@
+.our {
+  margin-bottom: 50px;
+  padding: 100px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 490px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 366px;
+    line-height: 1.7;
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.9;
+  }
+
+  &__slider {
+    width: 100%;
+    max-width: 570px;
+    min-height: 500px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 126px 44px 116px 26px;
+    max-width: 570px;
+    background-color: #1e2028;
+    border-radius: 10px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      right: 44px;
+      top: 37px;
+      width: 80px;
+      height: 70px;
+      background-image: url('../img/mark-slider.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__box {
+    display: flex;
+    margin-bottom: 17px;
+  }
+
+  &__photo {
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
+  &__author {
+    width: 100%;
+    max-width: 145px;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+}
+
+.swiper {
+  width: 570px;
+  height: 500px;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background-color: #8e8f93;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: var(--color-white);
+}
+
+.swiper .swiper-pagination-horizontal {
+  bottom: 56px !important;
+}

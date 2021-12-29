@@ -1,0 +1,35 @@
+.hero {
+  &__wrapper {
+    position: relative;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    padding: 200px 0 90px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 20px;
+      background: linear-gradient(106.17deg, rgba(40, 40, 40, 0.56) -25.28%, rgba(38, 38, 38, 0.24) 123.88%);
+    }
+  }
+
+  &__content {
+    position: relative;
+    margin-left: auto;
+    width: 100%;
+    max-width: 750px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 700px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.9;
+  }
+}

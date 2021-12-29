@@ -1,0 +1,14 @@
+.header {
+  margin-bottom: 50px;
+  padding: 15px 0 8px;
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin: 0 20px;
+  }
+}
