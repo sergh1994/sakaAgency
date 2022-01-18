@@ -2,13 +2,26 @@
   margin-bottom: 50px;
   padding: 50px 0;
 
+  @include mobile {
+    margin-bottom: 0;
+  }
+
   &__title {
     margin-bottom: 50px;
     text-align: center;
+
+    @include mobile {
+      font-size: 40px;
+      line-height: 50px;
+    }
   }
 
   &__inner {
     display: flex;
+
+    @include tablet {
+      display: block;
+    }
   }
 
   &__box-right {
@@ -19,6 +32,18 @@
     display: flex;
     width: 100%;
     max-width: 540px;
+
+    @include desktopMin {
+      flex-direction: row-reverse;
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @include mobile {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 
   &__item--first {
@@ -29,10 +54,18 @@
   &__item--third {
     flex-direction: row-reverse;
     margin-bottom: 40px;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   &__item--fourth {
     flex-direction: row-reverse;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   &__content {
@@ -41,26 +74,61 @@
     justify-content: end;
     margin-right: 10px;
     text-align: right;
+
+    @include tablet {
+      justify-content: center;
+      margin-right: 0;
+    }
+
+    @include mobile {
+      text-align: left;
+    }
   }
 
   &__content--first {
     padding-bottom: 20px;
+
+    @include tablet {
+      padding-bottom: 0;
+    }
   }
 
   &__content--second {
     padding-bottom: 80px;
+
+    @include tablet {
+      padding: 0;
+    }
   }
 
   &__content--third {
     padding-bottom: 20px;
     padding-left: 15px;
     text-align: left;
+
+    @include tablet {
+      padding: 0;
+      text-align: right;
+    }
+
+    @include mobile {
+      text-align: left;
+    }
   }
 
   &__content--fourth {
     padding-bottom: 70px;
     padding-left: 15px;
     text-align: left;
+
+    @include tablet {
+      padding: 0;
+      text-align: right;
+    }
+
+    @include mobile {
+      text-align: left;
+    }
   }
 
   &__caption {
@@ -78,19 +146,49 @@
     line-height: 1.8;
   }
 
+  &__pic {
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
   &__pic--first {
     border-radius: 100px 0 0;
+
+    @include mobile {
+      border-radius: 0;
+    }
   }
 
   &__pic--second {
     border-radius: 0 0 0 100px;
+
+    @include mobile {
+      border-radius: 0;
+    }
   }
 
   &__pic--third {
     border-radius: 0px 100px 0px 0px;
+
+    @include tablet {
+      border-radius: 100px 0 0;
+    }
+
+    @include mobile {
+      border-radius: 0;
+    }
   }
 
   &__pic--fourth {
     border-radius: 0px 0px 100px 0px;
+
+    @include tablet {
+      border-radius: 0 0 0 100px;
+    }
+
+    @include mobile {
+      border-radius: 0;
+    }
   }
 }

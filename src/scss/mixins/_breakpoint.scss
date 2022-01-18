@@ -4,14 +4,32 @@
   }
 }
 
+@mixin desktopMin {
+  @media (max-width: (1150px)) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (max-width: (1024px)) {
     @content;
   }
 }
 
-@mixin mobile {
+@mixin mobileMed {
   @media (max-width: (768px)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: (576px)) {
+    @content;
+  }
+}
+
+@mixin mobileMin {
+  @media (max-width: (375px)) {
     @content;
   }
 }

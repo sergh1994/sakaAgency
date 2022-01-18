@@ -2,6 +2,11 @@
   margin-bottom: 50px;
   padding: 50px 0;
 
+  @include mobile {
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+
   &__title {
     margin: 0 auto;
     margin-bottom: 50px;
@@ -9,12 +14,27 @@
     max-width: 600px;
     line-height: 1.2;
     text-align: center;
+
+    @include mobile {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 40px;
+    }
   }
 
   &__list {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
+
+    @include desktopMin {
+      justify-content: center;
+      grid-template-columns: repeat(2, 350px);
+    }
+
+    @include mobileMed {
+      grid-template-columns: repeat(1, 100%);
+    }
   }
 
   &__item {
@@ -24,6 +44,10 @@
     width: 100%;
     max-width: 350px;
     background-color: #1e2028;
+
+    @include mobileMed {
+      max-width: 100%;
+    }
 
     &::before {
       content: '';

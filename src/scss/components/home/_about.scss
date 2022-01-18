@@ -3,12 +3,29 @@
 
   &__title {
     margin-bottom: 40px;
+
+    @include desktopMin {
+      text-align: center;
+    }
+
+    @include mobile {
+      font-size: 45px;
+      line-height: 55px;
+    }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+    @include desktopMin {
+      padding-left: 70px;
+    }
+
+    @include mobileMed {
+      padding-left: 0;
+    }
   }
 
   &__item {
@@ -16,6 +33,14 @@
     padding-left: 100px;
     width: 100%;
     max-width: 540px;
+
+    @include desktopMin {
+      max-width: 100%;
+    }
+
+    @include mobile {
+      padding-left: 80px;
+    }
 
     &::before {
       content: '';

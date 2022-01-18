@@ -5,12 +5,30 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+
+    @include mobile {
+      display: block;
+      text-align: center;
+    }
   }
 
   &__box {
     margin-right: 100px;
     width: 100%;
     max-width: 210px;
+
+    @include tablet {
+      margin-right: 10px;
+      margin-bottom: 15px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   &__logo {
@@ -27,6 +45,10 @@
 
   &__socials {
     display: flex;
+
+    @include mobile {
+      justify-content: center;
+    }
   }
 
   &__social {
@@ -78,6 +100,14 @@
   &__list {
     width: 100%;
     max-width: 210px;
+
+    @include tablet {
+      margin-bottom: 15px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   &__item {
@@ -126,5 +156,15 @@
     position: absolute;
     top: 53px;
     right: 10px;
+
+    @include mobile {
+      right: 140px;
+    }
+  }
+
+  &__logo {
+    @include mobile {
+      margin: 0 auto 10px;
+    }
   }
 }
